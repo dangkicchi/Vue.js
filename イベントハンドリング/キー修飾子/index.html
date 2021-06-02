@@ -9,9 +9,11 @@
   </head>
   <body>
     <div id="app">
-
-
-
+      <!--<input type="text" v-on:keyup.27="clear" v-model="message">-->
+      <!--<input type="text" v-on:keyup.esc="clear" v-model="message">-->
+      
+      <input type="text" v-on:keyup.esc.space.up="clear" v-model="message">
+      <p>{{ message }}</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
